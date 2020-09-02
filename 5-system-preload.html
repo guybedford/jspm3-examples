@@ -1,0 +1,123 @@
+<!doctype html>
+<!--
+  SystemJS import map with ordered module preloads inlined
+-->
+<script src="https://ga.jspm.io/npm:systemjs@6.5.0/dist/system.min.js"></script>
+<script type="systemjs-importmap">
+  {
+    "imports": {
+      "bip39": "https://ga.system.jspm.io/npm:bip39@3.0.2/src/index.js",
+      "buffer": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/buffer.js",
+      "events": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/events.js",
+      "niceware": "https://ga.system.jspm.io/npm:niceware@2.0.1/lib/main.js",
+      "process": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/process.js",
+      "stream": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/stream.js",
+      "string_decoder": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/string_decoder.js",
+      "util": "https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/util.js"
+    },
+    "scopes": {
+      "https://ga.system.jspm.io/npm:bip39@3.0.2/": {
+        "create-hash": "https://ga.system.jspm.io/npm:create-hash@1.2.0/browser.js",
+        "pbkdf2": "https://ga.system.jspm.io/npm:pbkdf2@3.1.1/browser.js",
+        "randombytes": "https://ga.system.jspm.io/npm:randombytes@2.1.0/browser.js"
+      },
+      "https://ga.system.jspm.io/npm:cipher-base@1.0.4/": {
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      },
+      "https://ga.system.jspm.io/npm:create-hash@1.2.0/": {
+        "cipher-base": "https://ga.system.jspm.io/npm:cipher-base@1.0.4/index.js",
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "md5.js": "https://ga.system.jspm.io/npm:md5.js@1.3.5/index.js",
+        "ripemd160": "https://ga.system.jspm.io/npm:ripemd160@2.0.2/index.js",
+        "sha.js": "https://ga.system.jspm.io/npm:sha.js@2.4.11/index.js"
+      },
+      "https://ga.system.jspm.io/npm:hash-base@3.1.0/": {
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "readable-stream": "https://ga.system.jspm.io/npm:readable-stream@3.6.0/readable-browser.js",
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      },
+      "https://ga.system.jspm.io/npm:md5.js@1.3.5/": {
+        "hash-base": "https://ga.system.jspm.io/npm:hash-base@3.1.0/index.js",
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      },
+      "https://ga.system.jspm.io/npm:niceware@2.0.1/": {
+        "binary-search": "https://ga.system.jspm.io/npm:binary-search@1.3.6/index.js",
+        "randombytes": "https://ga.system.jspm.io/npm:randombytes@2.1.0/browser.js"
+      },
+      "https://ga.system.jspm.io/npm:pbkdf2@3.1.1/": {
+        "create-hash/md5": "https://ga.system.jspm.io/npm:create-hash@1.2.0/md5.js",
+        "pbkdf2/lib/sync.js": "https://ga.system.jspm.io/npm:pbkdf2@3.1.1/lib/sync-browser.js",
+        "ripemd160": "https://ga.system.jspm.io/npm:ripemd160@2.0.2/index.js",
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js",
+        "sha.js": "https://ga.system.jspm.io/npm:sha.js@2.4.11/index.js"
+      },
+      "https://ga.system.jspm.io/npm:randombytes@2.1.0/": {
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      },
+      "https://ga.system.jspm.io/npm:readable-stream@3.6.0/": {
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "readable-stream/lib/internal/streams/from.js": "https://ga.system.jspm.io/npm:readable-stream@3.6.0/lib/internal/streams/from-browser.js",
+        "readable-stream/lib/internal/streams/stream.js": "https://ga.system.jspm.io/npm:readable-stream@3.6.0/lib/internal/streams/stream-browser.js",
+        "string_decoder": "https://ga.system.jspm.io/npm:string_decoder@1.3.0/lib/string_decoder.js",
+        "util-deprecate": "https://ga.system.jspm.io/npm:util-deprecate@1.0.2/browser.js"
+      },
+      "https://ga.system.jspm.io/npm:ripemd160@2.0.2/": {
+        "hash-base": "https://ga.system.jspm.io/npm:hash-base@3.1.0/index.js",
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js"
+      },
+      "https://ga.system.jspm.io/npm:sha.js@2.4.11/": {
+        "inherits": "https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      },
+      "https://ga.system.jspm.io/npm:string_decoder@1.3.0/": {
+        "safe-buffer": "https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"
+      }
+    }
+  }
+</script>
+<!-- jspm preload ./module.js -->
+<script src="https://ga.system.jspm.io/npm:inherits@2.0.4/inherits_browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/buffer.js"></script>
+<script src="https://ga.system.jspm.io/npm:safe-buffer@5.2.1/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/events.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/lib/internal/streams/stream-browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/_/e00d42bc.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/_/0859a6e8.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/util.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/process.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/43c7435a.js"></script>
+<script src="https://ga.system.jspm.io/npm:util-deprecate@1.0.2/browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:string_decoder@1.3.0/lib/string_decoder.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/62a5d639.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/lib/internal/streams/from-browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/f8f64eb3.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/672603c0.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/d226384e.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/_/7bbe3798.js"></script>
+<script src="https://ga.system.jspm.io/npm:readable-stream@3.6.0/readable-browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:hash-base@3.1.0/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:md5.js@1.3.5/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:ripemd160@2.0.2/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:sha.js@2.4.11/_/c9f03a0b.js"></script>
+<script src="https://ga.system.jspm.io/npm:sha.js@2.4.11/sha1.js"></script>
+<script src="https://ga.system.jspm.io/npm:sha.js@2.4.11/sha256.js"></script>
+<script src="https://ga.system.jspm.io/npm:sha.js@2.4.11/sha512.js"></script>
+<script src="https://ga.system.jspm.io/npm:sha.js@2.4.11/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/_/0440de41.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/_/95a9034e.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/stream.js"></script>
+<script src="https://ga.system.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/string_decoder.js"></script>
+<script src="https://ga.system.jspm.io/npm:cipher-base@1.0.4/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:create-hash@1.2.0/browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:pbkdf2@3.1.1/_/1889a1c3.js"></script>
+<script src="https://ga.system.jspm.io/npm:create-hash@1.2.0/md5.js"></script>
+<script src="https://ga.system.jspm.io/npm:pbkdf2@3.1.1/lib/sync-browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:pbkdf2@3.1.1/_/ced57a37.js"></script>
+<script src="https://ga.system.jspm.io/npm:pbkdf2@3.1.1/browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:randombytes@2.1.0/browser.js"></script>
+<script src="https://ga.system.jspm.io/npm:bip39@3.0.2/src/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:binary-search@1.3.6/index.js"></script>
+<script src="https://ga.system.jspm.io/npm:niceware@2.0.1/lib/main.js"></script>
+<script src="module-system.js"></script>
