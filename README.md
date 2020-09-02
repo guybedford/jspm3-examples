@@ -47,6 +47,8 @@ preloading without needing to explicitly inline the script tags and instead usin
 
 ## Performance
 
+(very rough ballpark averaging applied over multiple runs)
+
 | Example Case                     | Uncached | Cached |
 | ---------------------------------| -------- | ------ |
 | 1. Single File Build             | 640ms    | 48ms   |
