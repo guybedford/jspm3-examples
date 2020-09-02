@@ -6,6 +6,17 @@ Examples of jspm 3 import maps comparing native modules, single file build, prel
 
 The example file is [`module.js`](https://github.com/guybedford/jspm3-examples/blob/master/module.js) in this repo, which depends on 1.1MB of JS using Node.js conventions.
 
+Performance for the various cases included below (very rough ballpark averaging applied over multiple runs):
+
+| Example Case                                           | Uncached | Cached |
+| -------------------------------------------------------| -------- | ------ |
+| [1. Single File Build](#1-esm-buid)                    | 640ms    | 48ms   |
+| [2. Direct Import ESM](#2-esm-import)                  | 850ms    | 160ms  |
+| [3. Direct Import SystemJS](#3-system-import)          | 1150ms   | 180ms  |
+| [4. Import with Preloads ESM](#4-esm-preload)          | 850ms    | 60ms   |
+| [5. Import with Preloads SystemJS](#5-system-preload)  | 960ms    | 52ms   |
+| [6. Import with Depcache SystemJS](#6-system-depcache) | 900ms    | 120ms  |
+
 ### 1. ESM Build
 
 > [Example](https://guybedford.github.io/jspm3-examples/1-esm-build) ([source](https://github.com/guybedford/jspm3-examples/blob/master/1-esm-build.html))
@@ -44,16 +55,3 @@ This inlines the SystemJS modules in post order, the SystemJS version of (4).
 
 This uses the "depcache" configuration in the SystemJS import map to achieve
 preloading without needing to explicitly inline the script tags and instead using graph hints.
-
-## Performance
-
-(very rough ballpark averaging applied over multiple runs)
-
-| Example Case                     | Uncached | Cached |
-| ---------------------------------| -------- | ------ |
-| 1. Single File Build             | 640ms    | 48ms   |
-| 2. Direct Import ESM             | 850ms    | 160ms  |
-| 3. Direct Import SystemJS        | 1150ms   | 180ms  |
-| 4. Import with Preloads ESM      | 850ms    | 60ms   |
-| 5. Import with Preloads SystemJS | 960ms    | 52ms   |
-| 6. Import with Depcache SystemJS | 900ms    | 120ms  |
