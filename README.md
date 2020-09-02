@@ -49,9 +49,9 @@ preloading without needing to explicitly inline the script tags and instead usin
 
 | Example Case                         | Uncached | Cached |
 | -------------------------------------| -------- | ------ |
-| 1. Single File Build (2)             | 200ms    | 200ms  |
-| 2. Direct Import ESM (1)             | 200ms    | 200ms  |
-| 3. Direct Import SystemJS (4)        | 200ms    | 200ms  |
-| 4. Import with Preloads ESM (3)      | 200ms    | 200ms  |
-| 5. Import with Preloads SystemJS (5) | 200ms    | 200ms  |
-| 6. Import with Depcache SystemJS (6) | 200ms    | 200ms  |
+| 1. Single File Build (2)             | 640ms    | 60ms   |
+| 2. Direct Import ESM (1)             | 850ms    | 160ms  |
+| 3. Direct Import SystemJS (4)        | 1150ms   | 180ms  |
+| 4. Import with Preloads ESM (3)      | 850ms    | 60ms   |
+| 5. Import with Preloads SystemJS (5) | 960ms    | 52ms   |
+| 6. Import with Depcache SystemJS (6) | 900ms    | 120ms  |
