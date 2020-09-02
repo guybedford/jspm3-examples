@@ -47,11 +47,11 @@ preloading without needing to explicitly inline the script tags and instead usin
 
 ## Performance
 
-| Example Case                         | Uncached | Cached |
-| -------------------------------------| -------- | ------ |
-| 1. Single File Build (2)             | 640ms    | 60ms   |
-| 2. Direct Import ESM (1)             | 850ms    | 160ms  |
-| 3. Direct Import SystemJS (4)        | 1150ms   | 180ms  |
-| 4. Import with Preloads ESM (3)      | 850ms    | 60ms   |
-| 5. Import with Preloads SystemJS (5) | 960ms    | 52ms   |
-| 6. Import with Depcache SystemJS (6) | 900ms    | 120ms  |
+| Example Case                     | Uncached | Cached |
+| ---------------------------------| -------- | ------ |
+| 1. Single File Build             | 640ms    | 60ms   |
+| 2. Direct Import ESM             | 850ms    | 160ms  |
+| 3. Direct Import SystemJS        | 1150ms   | 180ms  |
+| 4. Import with Preloads ESM      | 850ms    | 60ms   |
+| 5. Import with Preloads SystemJS | 960ms    | 52ms   |
+| 6. Import with Depcache SystemJS | 900ms    | 120ms  |
