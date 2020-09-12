@@ -2,6 +2,12 @@
 <!--
   SystemJS import map with ordered module preloads inlined
 -->
+<script>
+  if (typeof Promise === 'undefined')
+    document.write('<script src="https://unpkg.com/bluebird/js/browser/bluebird.core.js"><\/script>');
+  if (typeof fetch === 'undefined')
+    document.write('<script src="https://unpkg.com/whatwg-fetch/fetch.js"><\/script>');
+</script>
 <script src="https://ga.system.jspm.io/npm:systemjs@6.6.0/dist/s.min.js"></script>
 <script type="systemjs-importmap">
   {
